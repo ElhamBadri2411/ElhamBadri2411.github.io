@@ -718,6 +718,12 @@ footer {
         list-style: none;
         cursor: default;
         font-size: 1.2em;
+
+        img {
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+        }
     }
 }
 

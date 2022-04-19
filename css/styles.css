@@ -220,6 +220,13 @@ footer {
 .background-alt {
   background: #eee;
 }
+
+#skills li img {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+}
+
 #lead {
   position: relative;
   height: 100vh;
