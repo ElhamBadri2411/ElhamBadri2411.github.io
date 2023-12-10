@@ -97,6 +97,109 @@
       <h2 class="heading">Experience & Leadership</h2>
       <div id="experience-timeline">
 
+        <div ddata-date="September 2023 – Present">
+          <h3>Oracle</h3>
+    <h4>Software Developer</h4>
+          <p>
+            Collaborated on transforming a monolithic application to a microservices architecture in C#, developing new SQL stored procedures for data retrieval.<br>
+            Executed the rewriting and migration of critical validation endpoints from C# to JavaScript, resulting in improved performance and maintainability, testing using Jest unit tests to ensure accuracy and reliability. <br>
+            Diagnosed and resolved critical bugs, addressing timeout errors, increasing system efficiency by 15%. <br>
+            Contributed significantly in the migration of applications to AWS, leveraging Kubernetes and Docker, and using OpenLens for debugging to minimize disruptions <br>
+
+            here is something I did at the postion: 
+            <div style="border:5px solid black">
+              <style>
+                .border {
+                  border: 1px solid black;
+                  padding: 10px;
+                }
+              </style>
+              
+              <div class="border">
+                <h3>Splitting monolithic applications into microservices</h3>
+                <p>
+                   microservices have many benefits over monolithic applications such as:
+                 <ul>
+                  <li>Improved scalability</li>
+                  <li>Easier Maintenance</li>
+                  <li>Easier to develop</li>
+                 </ul>
+
+                 This is due to the fact that each service is seperate from the rest making it easier to developers to increase the number of instances, fix bugs in each service, and not have to worry about too many dependencies when developing new features
+                </p>
+                <pre>
+                  <code>
+# Monolithic Python Flask Application
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+# Routes for different functionalities
+@app.route('/')
+def home():
+    return render_template('home.html')
+
+@app.route('/products')
+def products():
+    return render_template('products.html')
+
+@app.route('/orders')
+def orders():
+    return render_template('orders.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+=========================
+
+# Catalog Microservice
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/products')
+def products():
+    # Product-related logic
+    return render_template('products.html')
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5001)
+
+
+=========================
+
+# Order Microservice
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/orders')
+def orders():
+    # Order-related logic
+    return render_template('orders.html')
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5002)
+
+                  </code>
+                </pre>
+              
+                <p>
+                  In this code, a monolithic api handles both catalog and orders
+                <p>
+                  By splitting up this into 2 seperate microservices, you can decouple the logic, gaining all the benefits of using microservices
+                </p>
+              </div>
+              
+            </div>
+            
+          </p>
+
+        </div>
+
         <div ddata-date="September 2022 – December 2022">
           <h3>Oracle</h3>
     <h4>Software Developer</h4>
